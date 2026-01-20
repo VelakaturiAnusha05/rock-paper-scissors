@@ -1,0 +1,33 @@
+# Rock Paper Scissors Game This is a simple web-based Rock-Paper-Scissors game
+created using **HTML, CSS, and JavaScript**. The game features a responsive user
+interface, real-time score tracking, and instant feedback after each move. ---
+## Technologies Used - HTML - CSS - JavaScript --- ## Project Description The
+Rock-Paper-Scissors game allows a user to play against the computer. The
+computer randomly selects Rock, Paper, or Scissors, and the result is displayed
+instantly. Scores are updated dynamically using JavaScript DOM manipulation. ---
+## HTML Code (index.html) ```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="game">
+      <button onclick="playGame('Rock')">Rock</button>
+      <button onclick="playGame('Paper')">Paper</button>
+      <button onclick="playGame('Scissors')">Scissors</button>
+    </div>
+
+    <div class="result">
+      <p id="message">Choose an option to start the game</p>
+      <p>Player Score: <span id="playerScore">0</span></p>
+      <p>Computer Score: <span id="computerScore">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
